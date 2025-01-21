@@ -39,3 +39,10 @@ CosmoLattice is freely available to anyone who wants to use or modify it. Howeve
 using CosmoLattice in your research, no matter how much (or little) you modify the code, 
 <b>please cite both <a href=https://arxiv.org/pdf/2006.15122.pdf target="_blank" rel="noopener noreferrer" > arXiv:2006.15122</a> 
 and <a href=https://arxiv.org/pdf/2102.01031.pdf target="_blank" rel="noopener noreferrer" > arXiv:2102.01031</a> in your papers</b>. 
+
+# To install on cluster
+cd dependencies
+bash fetchall.sh MyLibs
+cd build
+cmake -DMODEL=tanh2 -DMPI=ON ../
+make cosmolattice

@@ -1,0 +1,36 @@
+#Output
+outputfile = ./
+
+#Evolution
+expansion = true
+evolver = VV2
+
+#Lattice
+N = 64
+dt = 0.003
+kIR = 3
+
+#Times
+tOutputFreq = 0.1
+tOutputInfreq = 0.5
+tOutputRareFreq = 10
+tMax = 400
+
+#IC
+kCutOff = 18
+initial_amplitudes = 2.016e18 0 # homogeneous amplitudes in GeV
+initial_momenta = -2.16e31 0    # homogeneous amplitudes in GeV2
+
+#Model Parameters
+M = 5.87e18
+Lambda4 = 8.1616e63
+q = 3.62e2
+beta = 1.1e-9
+
+#GWs
+GWprojectorType = 1
+withGWs=false
+
+# Either rederive the omega and f so that we know what q is, then derive the 
+# value of initial initial_momenta
+# Or, can we rewrite sebastians equation in the model file?
